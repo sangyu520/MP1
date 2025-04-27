@@ -20,16 +20,28 @@ export const awardsIntro = "Recognition for academic and professional achievemen
 
 export const awards: Array<ActivityItemType> = [
   {
-    name: 'Outstanding Teacher Award',
-    description: '',
-    date: '2024',
-    location: 'SCLS, Shanghai',
+    name: '高中物理竞赛三等奖',
+    description: '嘿嘿，水的',
+    date: '2023',
+    location: 'Mianyang, Sichuan',
   },
   {
-    name: 'Zhui Ying Award',
-    description: '',
-    date: '2023',
-    location: 'Qingpu, Shanghai',
+    name: '英语四级',
+    description: '五百多险过',
+    date: '2024',
+    location: 'Haikou,Hainan',
+  },
+  {
+    name: '普通话考试',
+    description: '三甲--哎哟，可以当公务员了',
+    date: '2024',
+    location: 'Haikou,Hainan',
+  },
+  {
+    name: '无题',
+    description: '也许会有的',
+    date: 'present',
+    location: 'Haikou,Hainan',
   },
 ]
 
@@ -39,28 +51,10 @@ export const projectIntro = "Academic research and technical projects I've worke
 
 export const projects: Array<ProjectItemType> = [
   {
-    name: 'Student Final Project Portfolio',
-    description: 'Static website portfolio',
-    link: { href: 'scls-cs.com', label: 'GitHub Cards' },
-    tags: ['Website', 'Next.js', 'TailwindCSS', 'DaisyUI', 'Portfolio']
-  },
-  {
-    name: 'Seeking DNA',
-    description: '2022 SCLS Hackathon',
-    link: { href: 'https://scls-cs.gitbook.io/scls-apcs-lab/lab5-dna', label: 'Hackathon' },
-    tags: ['Hackathon', 'Java']
-  },
-  {
-    name: 'Texas Holdem Poker Judge',
-    description: '2024 SCLS Hackathon',
-    link: { href: 'https://onecompiler.com/challenges/42yf4n5yn/scls-hackathon', label: 'Hackathon' },
-    tags: ['Hackathon']
-  },
-  {
-    name: 'AI Camp Course Development',
-    description: 'Developed a comprehensive AI curriculum for high school students, incorporating real-world projects and startup concepts.',
-    link: { href: 'https://scls-cs.gitbook.io/ai-camp', label: 'View Course' },
-    tags: ['Education', 'AI']
+    name: '部署的东西挺多的',
+    description: '',
+    link: { href: '', label: '' },
+    tags: ['Website', 'Next.js', 'TailwindCSS', 'Hexo']
   },
 ]
 
@@ -70,26 +64,20 @@ export const activitiesIntro = "Personal interests and community contributions."
 
 export const activities: Array<ActivityItemType> = [
   {
-    name: 'Python Workshop',
+    name: '搭建自己的blog',
     description:
-      'Teaching basic Python programming concepts to beginners. Covering variables, control flow, and functions.',
-    date: '2024-02-24',
-    location: 'Shanghai',
-    link: 'https://example.com/python-workshop',
+      '这是站点，可以去往我的各个分站',
+    date: '2025-03-28',
+    location: 'Hainan',
+    link: 'https://temp.sangyufeiwan.com/',
   },
   {
-    name: 'AI Ethics Discussion',
+    name: '',
     description:
-      'A group discussion about the ethical implications of AI development and its impact on society.',
-    date: '2024-03-01',
-    location: 'Shanghai',
-    link: 'https://example.com/ai-ethics',
+      '慢慢培养嘛',
+    date: 'present',
+    location: 'Haikou,Hainan',
+    link: '',
   },
-  {
-    name: 'Code Review Session',
-    description:
-      'Helping students improve their coding skills through peer code review and best practices sharing.',
-    date: '2024-03-15',
-    location: 'Shanghai',
-  },
+  
 ]

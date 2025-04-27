@@ -3,19 +3,19 @@ export * from './education'
 export * from './career'
 
 // personal info
-export const name = 'Derek Hu'
-export const headline = 'Teacher at Shanghai Soong Ching Ling School.'
+export const name = 'Sang Yu'
+export const headline = '学生'
 export const introduction =
-  "Coucou Les Amis! My name is Derek Hu. I'm from Hubei and an alumnus of BUPT, UChicago, and Tsinghua. I’ve been teaching Computer Science at SCLS since 2020."
-export const email = 'tong.hu@scls-sh.org'
-export const githubUsername = 'derekhut'
+  "桑榆，一个躺平的大学生"
+export const email = '2035027466@qq.com'
+export const githubUsername = 'sangyu520'
 
 // about page
 export const aboutMeHeadline = 'Who Are You and Why Should I Care?'
 export const aboutParagraphs = [
-  "Coucou Les Amis! My name is Derek Hu. I'm from Hubei and an alumnus of BUPT, UChicago, and Tsinghua. I’ve been teaching Computer Science at SCLS since 2020.",
-  'Currently I am working on a new course called AI Camp, an innovative course where high school students create real-world products and startups while exploring the frontiers of AI.',
-  "I started this blog to share the insights I learn every day. Most blogs focus on education in Artificial Intelligence and general computer science, while others share the life lessons I've learned.",
+  "Hello everyone! My name is Sangyu, and I'm from Sichuan, China. I have been studying at Hainan University since 2024, majoring in Mathematics and Applied Mathematics.",
+  'As of now, I\'m happily drifting through life and embracing a laid-back attitude.',
+  "I started this blog to document and share what I learn every day. Most of the posts focus on education in Artificial Intelligence and general Computer Science, along with occasional reflections and lessons from my personal life.",
 ]
 
 // blog
@@ -33,39 +33,47 @@ export type SocialLinkType = {
 
 export const socialLinks: Array<SocialLinkType> = [
   {
-    name: 'Tiktok',
+    name: 'Douyin',
     icon: 'tiktok',
-    href: 'https://www.tiktok.com/@harvard?lang=en',
+    href: 'https://www.douyin.com/user/self?from_tab_name=main',
   },
   {
     name: 'Bilibili',
     icon: 'bilibili',
-    href: 'https://space.bilibili.com/349721082',
+    href: 'https://space.bilibili.com/1349188481?spm_id_from=333.1007.0.0',
   },
 ]
 
 // https://simpleicons.org/
 export const techIcons = [
-  'typescript',
-  'javascript',
-  'supabase',
-  'cloudflare',
-  'java',
-  'oracle',
-  'mysql',
-  'react',
-  'nodedotjs',
-  'nextdotjs',
-  'prisma',
-  'postgresql',
-  'nginx',
-  'vercel',
-  'docker',
-  'git',
-  'github',
-  'visualstudiocode',
-  'androidstudio',
-  'ios',
-  'apple',
-  'wechat',
+  "typescript",
+  "javascript",
+  "qq",
+  "java",
+  "react",
+  "vite",
+  "cplusplus",
+  "kalilinux",
+  "css",
+  "nodedotjs",
+  "wordpress",
+  "nextdotjs",
+  "xiaohongshu",
+  "treyarch",
+  "monkeytie",
+  "steam",
+  "MySQL",
+  "vercel",
+  "Hexo",
+  "neteasecloudmusic",
+  "zhihu",
+  "docker",
+  "git",
+  "lamborghini",
+  "github",
+  "huawei",
+  "republicofgamers",
+  "apple",
+  "bilibili",
+  "mihoyo",
 ]
