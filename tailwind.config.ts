@@ -4,7 +4,12 @@ import { type Config } from 'tailwindcss'
 import typographyStyles from './typography'
 
 export default {
-  content: ['./src/**/*.{js,jsx,ts,tsx}'],
+  content: [
+  './src/**/*.{js,jsx,ts,tsx}',
+  './components/**/*.{js,jsx,ts,tsx}',  // 确保你的组件文件夹也被包括
+  './pages/**/*.{js,jsx,ts,tsx}'       // 如果你有 pages 目录
+],
+
   darkMode: ['class'],
   plugins: [typographyPlugin, require("tailwindcss-animate")],
   theme: {
