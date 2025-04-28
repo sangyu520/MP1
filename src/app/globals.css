@@ -1,0 +1,31 @@
+/* globals.css */
+
+/* Horizontal marquee animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Vertical marquee animation */
+@keyframes marquee-vertical {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+/* Horizontal scrolling */
+.animate-marquee {
+  animation: marquee var(--duration) linear infinite;
+}
+
+/* Vertical scrolling */
+.animate-marquee-vertical {
+  animation: marquee-vertical var(--duration) linear infinite;
+}
