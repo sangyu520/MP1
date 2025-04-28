@@ -1,17 +1,24 @@
-// tailwind.config.js
-import typographyPlugin from '@tailwindcss/typography'
-import { type Config } from 'tailwindcss'
-import typographyStyles from './typography'
+import typographyPlugin from '@tailwindcss/typography';
+import { type Config } from 'tailwindcss';
+import typographyStyles from './typography';
 
 export default {
   content: [
-  './src/**/*.{js,jsx,ts,tsx}',
-  './components/**/*.{js,jsx,ts,tsx}',  // 确保你的组件文件夹也被包括
-  './pages/**/*.{js,jsx,ts,tsx}'       // 如果你有 pages 目录
-],
-
+    './src/**/*.{js,jsx,ts,tsx}',
+    './components/**/*.{js,jsx,ts,tsx}', // 确保你的组件文件夹也被包括
+    './pages/**/*.{js,jsx,ts,tsx}'        // 如果你有 pages 目录
+  ],
   darkMode: ['class'],
-  plugins: [typographyPlugin, require("tailwindcss-animate")],
+  plugins: [
+    typographyPlugin,
+    require('tailwindcss-animate')
+  ],
+  safelist: [
+    "animate-marquee",
+    "animate-marquee-vertical",
+    "group-hover:[animation-play-state:paused]",
+    "[animation-direction:reverse]",
+  ],
   theme: {
     fontSize: {
       xs: ['0.8125rem', { lineHeight: '1.5rem' }],
@@ -28,7 +35,7 @@ export default {
       '8xl': ['6rem', { lineHeight: '1' }],
       '9xl': ['8rem', { lineHeight: '1' }]
     },
-    typography: 'typographyStyles',
+    typography: typographyStyles,
     extend: {
       borderRadius: {
         lg: 'var(--radius)',
@@ -93,4 +100,4 @@ export default {
       }
     }
   }
-} satisfies Config
+} satisfies Config;
