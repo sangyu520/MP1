@@ -25,7 +25,7 @@ export interface AnimatedListProps extends ComponentPropsWithoutRef<"div"> {
   visibleCount?: number; // 新增：最大显示数量
 }
 
-export const AnimatedList = React.memo(({ children, className, delay = 1000, visibleCount = 10, ...props }: AnimatedListProps) => {
+export const AnimatedList = React.memo(({ children, className, delay = 2000, visibleCount = 10, ...props }: AnimatedListProps) => {
   const [index, setIndex] = useState(0);
   const childrenArray = useMemo(() => React.Children.toArray(children), [children]);
 
