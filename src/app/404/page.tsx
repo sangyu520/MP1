@@ -32,7 +32,8 @@ export default function NotFound() {
             {/* 提示文字 */}             
             <div className="mt-[-50px]">               
               <h3 className="mb-4 text-2xl font-bold text-black sm:text-3xl">                 
-                Look like you&apos;re lost               
+                  Looks like you are lost
+             
               </h3>               
               <p className="mb-6 text-black sm:mb-5">                 
                 The page you are looking for is not available!               
