@@ -1,0 +1,35 @@
+"use client";  // 确保这个组件是客户端组件
+
+import { motion } from "framer-motion";
+
+export function LightPullThemeSwitcher() {
+  const toggleDarkMode = () => {
+    const root = document.documentElement;
+    root.classList.toggle("dark");
+  };
+
+  return (
+    <div className="fixed top-4 right-4 z-50">
+      <motion.div
+        drag="y"
+        dragDirectionLock
+        onDragEnd={(event, info) => {
+          if (info.offset.y > 0) {
+            toggleDarkMode();
+          }
+        }}
+        dragConstraints={{ top: 0, right: 0, bottom: 0, left: 0 }}
+        dragTransition={{ bounceStiffness: 500, bounceDamping: 15 }}
+        dragElastic={0.075}
+        whileDrag={{ cursor: "grabbing" }}
+        className="relative w-8 h-8 rounded-full 
+          bg-[radial-gradient(circle_at_center,_#facc15,_#fcd34d,_#fef9c3)] 
+          dark:bg-[radial-gradient(circle_at_center,_#4b5563,_#1f2937,_#000)] 
+          shadow-[0_0_20px_8px_rgba(250,204,21,0.5)] 
+          dark:shadow-[0_0_20px_6px_rgba(31,41,55,0.7)]"
+      >
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 w-0.5 h-[9999px] bg-neutral-200 dark:bg-neutral-700"></div>
+      </motion.div>
+    </div>
+  );
+}

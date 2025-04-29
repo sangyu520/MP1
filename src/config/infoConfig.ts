@@ -4,9 +4,9 @@ export * from './career'
 
 // personal info
 export const name = 'Sang Yu'
-export const headline = '学生'
+export const headline = ' '
 export const introduction =
-  "桑榆，一个躺平的大学生"
+  ""
 export const email = '2035027466@qq.com'
 export const githubUsername = 'sangyu520'
 
