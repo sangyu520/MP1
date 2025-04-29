@@ -16,27 +16,30 @@ export default function NotFound() {
   }, []);
 
   return (
-    <section className="fixed inset-0 bg-white font-serif flex items-center justify-center z-50">
+    <section className="fixed inset-0 z-50 flex items-center justify-center bg-white font-serif">
       <div className="container mx-auto">
         <div className="flex justify-center">
-          <div className="w-full sm:w-10/12 md:w-8/12 text-center">
+          <div className="w-full text-center sm:w-10/12 md:w-8/12">
+            {/* 背景图 + 404 */}
             <div
-              className="bg-[url('https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif')] h-[250px] sm:h-[350px] md:h-[400px] bg-center bg-no-repeat bg-contain mx-auto"
               aria-hidden="true"
+              className="mx-auto h-[250px] bg-[url('https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif')] bg-contain bg-center bg-no-repeat sm:h-[350px] md:h-[400px]"
             >
-              <h1 className="text-center text-black text-6xl sm:text-7xl md:text-8xl pt-6 sm:pt-8">
+              <h1 className="pt-6 text-center text-6xl text-black sm:pt-8 sm:text-7xl md:text-8xl">
                 404
               </h1>
             </div>
 
+            {/* 提示文字 */}
             <div className="mt-[-50px]">
-              <h3 className="text-2xl text-black sm:text-3xl font-bold mb-4">
-                Look like you're lost
+              <h3 className="mb-4 text-2xl font-bold text-black sm:text-3xl">
+                Look like you&apos;re lost
               </h3>
               <p className="mb-6 text-black sm:mb-5">
                 The page you are looking for is not available!
               </p>
 
+              {/* 返回主页按钮 */}
               <Button
                 variant="default"
                 onClick={() => router.push("/")}
